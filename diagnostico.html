@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico Empresarial — AFOGUEL Contabilidade e Consultoria</title>
+<meta name="description" content="Solicite o diagnóstico gratuito da sua empresa. Contabilidade, fiscalidade, RH e consultoria empresarial em Luanda, Angola.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+  .diagnosis.page{ padding: 160px 0 100px; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="mark">AF</span> AFOGUEL</a>
+    <div class="nav-links" id="navLinks">
+      <a href="servicos.html">Serviços</a>
+      <a href="servicos.html#segmentos">Soluções</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="sobre.html#casos">Casos</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="diagnostico.html" class="nav-cta">Pedir Diagnóstico</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- CONTACT / DIAGNOSIS -->
+<section class="diagnosis page" id="diagnostico">
+  <div class="wrap diag-grid">
+    <div class="reveal">
+      <div class="eyebrow">Diagnóstico Empresarial</div>
+      <h1 class="section-title" style="color:var(--white);">Solicite o diagnóstico gratuito da sua empresa.</h1>
+      <p>Preencha o formulário ou contacte-nos diretamente. Respondemos com um plano de ação inicial.</p>
+      <div class="diag-contacts">
+        <a href="https://wa.me/244923317915" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +244 923 317 915</a>
+        <div class="row"><span class="label">Telefone</span> +244 951 046 579</div>
+        <a href="mailto:consultoria@afoguel.com"><span class="label">Email</span> consultoria@afoguel.com</a>
+        <a href="https://instagram.com/afoguel_consultoria" target="_blank" rel="noopener"><span class="label">Instagram</span> @afoguel_consultoria</a>
+        <div class="row"><span class="label">Localização</span> Luanda, Angola</div>
+      </div>
+    </div>
+
+    <form class="diag-form reveal" id="diagForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-field">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="sector">Sector</label>
+          <input type="text" id="sector" name="sector">
+        </div>
+        <div class="form-field">
+          <label for="servico">Tipo de Serviço</label>
+          <select id="servico" name="servico">
+            <option>Contabilidade &amp; Fecho de Contas</option>
+            <option>Fiscalidade</option>
+            <option>Recursos Humanos</option>
+            <option>Assessoria Administrativa</option>
+            <option>Formação e Treinamento</option>
+            <option>Abertura de Empresas</option>
+            <option>Ainda não sei</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="problema">Problema Atual</label>
+          <textarea id="problema" name="problema" placeholder="Descreva brevemente o desafio da sua empresa"></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="urgencia">Urgência</label>
+          <select id="urgencia" name="urgencia">
+            <option>Imediata</option>
+            <option>Próximas semanas</option>
+            <option>Próximo trimestre</option>
+            <option>Apenas a pesquisar</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <button type="submit" class="btn">Solicitar Diagnóstico Empresarial</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark">AF</span> AFOGUEL</a>
+        <p>Contabilidade e consultoria empresarial estruturada para empresas em Angola.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <a href="servicos.html">Contabilidade</a>
+        <a href="servicos.html">Fiscalidade</a>
+        <a href="servicos.html">Recursos Humanos</a>
+      </div>
+      <div class="footer-col">
+        <h5>Soluções</h5>
+        <a href="servicos.html#segmentos">PME</a>
+        <a href="servicos.html#segmentos">Startups</a>
+        <a href="servicos.html#segmentos">Empreendedores</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="mailto:consultoria@afoguel.com">consultoria@afoguel.com</a>
+        <a href="https://wa.me/244923317915" target="_blank" rel="noopener">+244 923 317 915</a>
+        <a href="https://instagram.com/afoguel_consultoria" target="_blank" rel="noopener">@afoguel_consultoria</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© AFOGUEL — Contabilidade e Consultoria Empresarial, Luanda, Angola</p>
+      <a href="https://instagram.com/websitesrapidos.ao" target="_blank" rel="noopener">Made by WRAO</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/244923317915" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+<script src="script.js"></script>
+</body>
+</html>
